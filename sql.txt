@@ -1,0 +1,1 @@
+SELECT nome_banco, verba, MIN(data_inclusao) AS data_inclusao_mais_antiga, MAX(data_inclusao) AS data_inclusao_mais_nova, SUM(valor_contrato) AS soma_valor_contratos FROM contratos GROUP BY nome_banco, verba;  
